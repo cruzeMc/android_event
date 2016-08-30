@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.CreateEvent">
+
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="118dp"
+            android:hint="@string/event_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_name"
+            android:hint="@string/category"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category"
+            android:onClick="showDatePickerDialog"
+            android:text="@string/date" />
+
+        <EditText
+            android:id="@+id/start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:hint="@string/start_time"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/end_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time"
+            android:hint="@string/end_time"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/venue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_time"
+            android:hint="@string/venue"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue"
+            android:hint="@string/latitude"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lat"
+            android:hint="@string/longitude"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/capacity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lng"
+            android:hint="@string/capacity"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/admission"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/capacity"
+            android:hint="@string/admission"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admission"
+            android:hint="@string/description"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:hint="@string/contact"
+            android:inputType="text" />
+    </RelativeLayout>
+</ScrollView>
